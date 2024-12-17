@@ -1,86 +1,83 @@
 ---
 experiences:
-  - title: Project Leader
-    company: Mercado Libre
-    period: From 2022.07 to Present
-    location: Buenos Aires, Argentina
-    description: Responsible for Product and Project Management.
+  - title: ✦ Lead QA Engineer, Staff Software Engineer
+    company: Help Scout
+    period: From 06/2023 to 03/2024 
+    location: Halifax, Canada (Remote)
+    description: Directed quality assurance initiatives, streamlined testing processes, and introduced a QA strategy.
 
-  - title: Sr QA Automation Architect
-    company: Globant
-    period: From 2022.01 to 2022.06
-    location: Buenos Aires, Argentina
-    description: Management and monitoring of the test automation team.
+  - title: ✦ Senior QA Engineer
+    company: Help Scout
+    period: From 05/2017 to 06/2023 
+    location: Halifax, Canada (Remote)
+    description: Crafted test plans with customized testing strategies, conducted exploratory and end-to-end testing, and performed manual functional and non-functional testing with an emphasis on user acceptance.
 
-  - title: SQA Automation Practice Manager
-    company: Baufest
-    period: From 2020.02 to 2021.12
-    location: Buenos Aires, Argentina
-    description: Provide test automation consultancy to clients, implementing methodologies, frameworks and processes with good practices. Maintain and update catalog of tools for the practice of automated testing cross country. Lead automated testing services. Management and leadership of test automation teams. Design and manage career development plans for people in the test automation practice.
+  - title: ✦ Quality Assurance Specialist
+    company: Nova Scotia Power, Inc.
+    period: From 07/2015 to 05/2017
+    location: Halifax, Canada (On-Site)
+    description: Formulated documentation, test strategies, estimations, and plans; executed tests, triaged defects, and reported testing metrics to management.
 
-  - title: QA Automation Team Leader
-    company: Avature
-    period: From 2019.05 to 2020.01
-    location: Buenos Aires, Argentina
-    description: Management and monitoring of the test automation team. Design and execution of automated test cases. Responsible for monitoring the execution of automated tests.
+  - title: ✦ QA Lead
+    company: Olapic Inc.
+    period: From 12/2014 to 06/2015
+    location: Córdoba, Argentina (Hybrid)
+    description: Built and led a QA team, implementing processes that decreased customer-reported defects by 50%.
 
-  - title: QA Automation Team Leader
-    company: NTT Data
-    period: From 2016.12 to 2019.04
-    location: Buenos Aires, Argentina
-    description: Management and monitoring of the test automation team. Design and execution of automated test cases. Responsible for monitoring the execution of automated tests.
+  - title: ✦ Test Leader/Release Manager
+    company: Arris (fka Motorola Mobility)
+    period: From 07/2008 to 12/2014
+    location: Córdoba, Argentina (On-Site)
+    description: Directed release planning for a scrum team of 9 members, and oversaw testing activities for multiple concurrent releases of the Motorola Merchandiser and VideoFlow products.
 
-  - title: QA Team Leader
-    company: NTT Data
-    period: From 2009.05 to 2016.11
-    location: Buenos Aires, Argentina
-    description: Management and leadership of the Quality Assurance team. Dictation of training courses in Testing and related tools. Development of test strategies and plans. Internal Auditor.
-
-  - title: Data Quality Analyst
-    company: IBM
-    period: From 2006.05 to 2009.04
-    location: Buenos Aires, Argentina
-    description: Participation in the Design of Test Plan. Responsible for effort estimation. Generation of environments for the execution of tests. Metrics analyst.
+  - title: ✦ Quality Assurance Engineer
+    company: Arris (fka Motorola Mobility)
+    period: From 07/2006 to 07/2008
+    location: Córdoba, Argentina (On-Site)
+    description: Performed comprehensive testing, including manual, automated, functional, exploratory, performance (JMeter and Linux bash commands) and web services testing.
 
 education:
-  - degree: Bachelor's Degree in Systems
-    institution: National University of La Plata
-    year: 2010 (3rd year incomplete)
+  - degree: Master of Science (MS), Information Systems Engineering
+    institution: Universidad Tecnológica Nacional – Facultad Regional Córdoba, Argentina
 
 skills:
-  - name: Spanish (Native)
-  - name: English (B2)
-  - name: Portuguese (B1)
-  - name: Speaker
-  - name: Project Manager
-  - name: Product Manager
-  - name: Technical presale
+  - name: Spanish
+  - name: English
+  - name: Lead QA
+  - name: Quality Assurance (QA)
+  - name: Cross-Functional Collaboration
+  - name: Test Management
+  - name: Test Automation
+  - name: Cypress
   - name: JavaScript
-  - name: HTML
-  - name: TypeScript
-  - name: Java
-  - name: Node.js
-  - name: Postgres SQL
-  - name: MySQL
-  - name: DynamoDB
-  - name: MongoDB
-  - name: Jira
-  - name: Confluence
+  - name: Web Testing
+  - name: Mobile Testing
+  - name: API Testing
+  - name: User Acceptance Testing (UAT)
+  - name: Accessibility Testing (A11y)
+  - name: Exploratory Testing
+  - name: Regression Testing
+  - name: Agile
   - name: Scrum
   - name: Kanban
-  - name: WebDriverIO
-  - name: Selenium
-  - name: Appium
-  - name: Cucumber
-  - name: Karate DSL
-  - name: Rest Assured
-  - name: Postman
-  - name: Newman
+  - name: QA Processes
+  - name: QA Metrics
+  - name: Continuous Improvement
+  - name: Training
+  - name: Mentoring
+  - name: Zephyr
+  - name: Jira
+  - name: Currents.dev
+  - name: Sorry Cypress
+  - name: A11y Deque axe Dev Tools
+  - name: SQL
+  - name: Gherkin (BDD)
   - name: Git
-  - name: JMeter
-  - name: K6
+  - name: GitHub
   - name: Docker
-  - name: Git
-  - name: Azure DevOps
-  - name: NestJS
+  - name: Jenkins
+  - name: Postman
+  - name: Slack
+  - name: Confluence
+  - name: JMeter
 ---

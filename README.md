@@ -42,7 +42,7 @@ Edit the [personal-info.md](./src/content/personal-info.md) file in the `content
 
 Add or modify projects in the [projects.md](./src/content/projects.md) file in the `content` directory. Each project should have a title, description, image, and link.
 
-### CV/Resume
+### Resume
 
 Update your experience, education, and skills in the [cv.md](./src/content/cv.md) file in the `content` directory.
 
