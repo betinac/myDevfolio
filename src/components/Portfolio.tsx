@@ -26,7 +26,7 @@ export default function Portfolio({ projects, cvData, personalInfo, socialLinks,
     setMounted(true)
     setIsContactEnabled(process.env.NEXT_PUBLIC_GOOGLE_SHEETS_ENABLED === 'true')
 
-    const sections = ['home', 'portfolio', 'cv']
+    const sections = ['home', 'portfolio', 'resume']
     if (isContactEnabled) sections.push('contact')
 
     sections.forEach((section) => {
@@ -123,7 +123,7 @@ export default function Portfolio({ projects, cvData, personalInfo, socialLinks,
     return null
   }
 
-  const navItems = ['home', 'portfolio', 'cv']
+  const navItems = ['home', 'portfolio', 'resume']
   if (isContactEnabled) navItems.push('contact')
 
   return (
@@ -144,7 +144,7 @@ export default function Portfolio({ projects, cvData, personalInfo, socialLinks,
                     variant="ghost"
                     className={`text-sm sm:text-lg px-2 sm:px-4 ${
                       activeSection === section 
-                        ? 'bg-[#56B281] dark:bg-[#151E21] text-white' 
+                        ? 'bg-[#477f61] dark:bg-[#151E21] text-white' 
                         : 'text-[#2F3E44] dark:text-white hover:text-[#2F3E44]/80 dark:hover:text-white/80'
                     }`}
                     onClick={() => scrollToSection(section)}
@@ -183,7 +183,7 @@ export default function Portfolio({ projects, cvData, personalInfo, socialLinks,
                     variant="ghost"
                     className={`text-lg w-full justify-start ${
                       activeSection === section 
-                        ? 'bg-[#56B281] dark:bg-[#151E21] text-white' 
+                        ? 'bg-[#477f61] dark:bg-[#151E21] text-white' 
                         : 'text-[#2F3E44] dark:text-white hover:text-[#2F3E44]/80 dark:hover:text-white/80'
                     }`}
                     onClick={() => scrollToSection(section)}
@@ -206,17 +206,17 @@ export default function Portfolio({ projects, cvData, personalInfo, socialLinks,
           <h1 className="text-4xl sm:text-6xl font-bold mb-6 animate-pulse text-[#2F3E44] dark:text-white">{personalInfo.name}</h1>
           <p className="text-xl sm:text-2xl mb-8 text-[#2F3E44]/80 dark:text-white/80">{personalInfo.role}</p>
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-            <Button size="lg" className="bg-[#56B281] hover:bg-[#56B281]/90 text-white" onClick={() => scrollToSection('portfolio')}>
+            <Button size="lg" className="bg-[#477f61] hover:bg-[#477f61]/90 text-white" onClick={() => scrollToSection('portfolio')}>
               View Portfolio
             </Button>
             {cvPdfUrl && (
               <Button 
                 size="lg" 
                 variant="outline" 
-                className="border-[#56B281] text-[#56B281] hover:bg-[#56B281]/10 dark:text-white dark:border-white"
+                className="border-[#477f61] text-[#477f61] hover:bg-[#477f61]/10 dark:text-white dark:border-white"
                 onClick={() => window.open(cvPdfUrl, '_blank')}
               >
-                Download CV
+                Download Resume
               </Button>
             )}
           </div>
@@ -245,7 +245,7 @@ export default function Portfolio({ projects, cvData, personalInfo, socialLinks,
                     className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-[#2F3E44]/50 dark:bg-[#151E21]/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <Button className="bg-[#56B281] hover:bg-[#56B281]/90 text-white" onClick={() => window.open(project.link, '_blank')}>View Project</Button>
+                    <Button className="bg-[#477f61] hover:bg-[#477f61]/90 text-white" onClick={() => window.open(project.link, '_blank')}>View Project</Button>
                   </div>
                 </div>
                 <div className="p-4">
@@ -257,12 +257,12 @@ export default function Portfolio({ projects, cvData, personalInfo, socialLinks,
           </div>
         </section>
 
-        {/* CV section */}
+        {/* Resume section */}
         <section
-          ref={sectionRefs.current['cv']}
+          ref={sectionRefs.current['resume']}
           className="min-h-screen py-20 px-4 bg-[#91B8C1] dark:bg-[#121212]"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-center text-white">Curriculum Vitae</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-center text-[#014e1f]">Resume</h2>
           <div className="max-w-3xl mx-auto space-y-8">
             <div className="bg-white dark:bg-[#151E21] rounded-lg p-6">
               <h3 className="text-2xl font-semibold mb-4 text-[#2F3E44] dark:text-white">Experience</h3>
@@ -291,7 +291,7 @@ export default function Portfolio({ projects, cvData, personalInfo, socialLinks,
               <h3 className="text-2xl font-semibold mb-4 text-[#2F3E44] dark:text-white">Skills</h3>
               <div className="flex flex-wrap gap-2">
                 {cvData.skills.map((skill, index) => (
-                  <span key={index} className="bg-[#56B281] text-white px-3 py-1 rounded-full text-sm">
+                  <span key={index} className="bg-[#477f61] text-white px-3 py-1 rounded-full text-sm">
                     {skill.name}
                   </span>
                 ))}
@@ -311,41 +311,44 @@ export default function Portfolio({ projects, cvData, personalInfo, socialLinks,
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium mb-2 text-[#2F3E44] dark:text-white">
-                    Name
+                    Your Name
                   </label>
                   <input
                     type="text"
                     id="name"
                     name="name"
                     required
-                    className="w-full px-3 py-2 bg-[#C7D8D9] dark:bg-[#151E21] rounded-md focus:outline-none focus:ring-2 focus:ring-[#56B281] text-[#2F3E44] dark:text-white"
+                    placeholder="What's your name?"
+                    className="w-full px-3 py-2 bg-[#C7D8D9] dark:bg-[#151E21] rounded-md focus:outline-none focus:ring-2 focus:ring-[#477f61] text-[#2F3E44] dark:text-white"
                   />
                 </div>
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium mb-2 text-[#2F3E44] dark:text-white">
-                    Email
+                    Your Email
                   </label>
                   <input
                     type="email"
                     id="email"
                     name="email"
                     required
-                    className="w-full px-3 py-2 bg-[#C7D8D9] dark:bg-[#151E21] rounded-md focus:outline-none focus:ring-2 focus:ring-[#56B281] text-[#2F3E44] dark:text-white"
+                    placeholder="What's your email?"
+                    className="w-full px-3 py-2 bg-[#C7D8D9] dark:bg-[#151E21] rounded-md focus:outline-none focus:ring-2 focus:ring-[#477f61] text-[#2F3E44] dark:text-white"
                   />
                 </div>
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium mb-2 text-[#2F3E44] dark:text-white">
-                    Message
+                    Your Message
                   </label>
                   <textarea
                     id="message"
                     name="message"
                     rows={4}
                     required
-                    className="w-full px-3 py-2 bg-[#C7D8D9] dark:bg-[#151E21] rounded-md focus:outline-none focus:ring-2 focus:ring-[#56B281] text-[#2F3E44] dark:text-white"
+                    placeholder="What's your message?"
+                    className="w-full px-3 py-2 bg-[#C7D8D9] dark:bg-[#151E21] rounded-md focus:outline-none focus:ring-2 focus:ring-[#477f61] text-[#2F3E44] dark:text-white"
                   ></textarea>
                 </div>
-                <Button type="submit" className="w-full bg-[#56B281] hover:bg-[#56B281]/90 text-white">
+                <Button type="submit" className="w-full bg-[#477f61] hover:bg-[#477f61]/90 text-white">
                   Send Message
                 </Button>
               </form>
@@ -358,7 +361,7 @@ export default function Portfolio({ projects, cvData, personalInfo, socialLinks,
 
       <footer className="bg-[#2F3E44] dark:bg-[#121212] py-8 px-4">
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
-          <p className="text-white text-center md:text-left">&copy; 2024 {personalInfo.name}. All rights reserved. This site was created by CharlyAutomatiza.</p>
+          <p className="text-white text-center md:text-left">&copy; 2024 {personalInfo.name}. All rights reserved.</p>
           <div className="flex space-x-4 mt-4 md:mt-0">
             {socialLinks.github && (
               <Button variant="ghost" className="text-white/70 hover:text-white" onClick={() => window.open(socialLinks.github, '_blank')} aria-label="GitHub">
@@ -381,7 +384,7 @@ export default function Portfolio({ projects, cvData, personalInfo, socialLinks,
               </Button>
             )}
           </div>
-        </div>
+        </div>  
       </footer>
     </div>
   )
