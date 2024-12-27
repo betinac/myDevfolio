@@ -1,9 +1,10 @@
 # My DevFolio
 
-This is the final look on how my portfolio looks like (`https://my-devfolio-jet.vercel.app/`):
+This is the final look on how [my portfolio](https://my-devfolio-jet.vercel.app/) looks like:
 
 <img align="left" width="300" src="/images/portfolio_1.png">
-<img align="left" width="300" src="/images/portfolio_2.png">
+<img align="center" width="300" src="/images/portfolio_2.png">
+
 <img align="left" width="300" src="/images/portfolio_3.png">
 <img align="center" width="300" src="/images/portfolio_4.png">
 
