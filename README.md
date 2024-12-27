@@ -2,10 +2,10 @@
 
 This is the final look on how my portfolio looks like (`https://my-devfolio-jet.vercel.app/`):
 
-<img align="left" width="300" height="300" src="/images/portfolio_1.png">
-<img align="left" width="300" height="300" src="/images/portfolio_2.png">
-<img align="left" width="300" height="300" src="/images/portfolio_3.png">
-<img align="center" width="300" height="300" src="/images/portfolio_4.png">
+<img align="left" width="300" src="/images/portfolio_1.png">
+<img align="left" width="300" src="/images/portfolio_2.png">
+<img align="left" width="300" src="/images/portfolio_3.png">
+<img align="center" width="300" src="/images/portfolio_4.png">
 
 
 ---
