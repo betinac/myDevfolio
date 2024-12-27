@@ -1,3 +1,16 @@
+# My DevFolio
+
+This is the final look on how [my portfolio](https://my-devfolio-jet.vercel.app/) looks like:
+
+<img align="left" width="300" src="/images/portfolio_1.png">
+<img align="center" width="300" src="/images/portfolio_2.png">
+
+<img align="left" width="300" src="/images/portfolio_3.png">
+<img align="center" width="300" src="/images/portfolio_4.png">
+
+
+---
+
 # DevFolio: Your Customizable Developer Portfolio
 
 DevFolio is a modern, responsive, and customizable portfolio template for developers. With easy-to-edit markdown files, you can showcase your projects, skills, and experience in a professional and visually appealing way.
